@@ -134,6 +134,12 @@ class _GalleryScreenState extends State<GalleryScreen> {
                     crossAxisCount = 5;
                   }
 
+                  if (isLoading && hits.isEmpty) {
+                    return const Center(
+                      child: CircularProgressIndicator(),
+                    );
+                  }
+
                   return GridView.builder(
                     controller: scrollController,
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -150,7 +156,7 @@ class _GalleryScreenState extends State<GalleryScreen> {
                 },
               ),
             ),
-            if (isLoading)
+            if (isLoading && hits.isNotEmpty)
               const Padding(
                 padding: EdgeInsets.symmetric(vertical: 16.0),
                 child: Center(
