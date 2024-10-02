@@ -18,7 +18,7 @@ class PixabayService {
     };
 
     final response = await apiClient.get(
-      '${Api.proxyUrl}/${Api.baseUrl}/',
+      '${Api.proxyUrl}${Api.baseUrl}/',
       data: queryParameters,
     );
 
