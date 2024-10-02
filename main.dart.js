@@ -82403,7 +82403,7 @@ o.n(0,"q",b)
 n=J
 m=J
 s=3
-return A.U(p.a.uz("https://crossorigin.me/https://pixabay.com/api/",o),$async$uD)
+return A.U(p.a.uz("https://yacdn.org/proxy/https://pixabay.com/api/",o),$async$uD)
 case 3:o=n.pt(m.mM(d.a,"hits"),new A.a6T(),t.tk)
 q=A.a1(o,!0,o.$ti.i("au.E"))
 s=1
